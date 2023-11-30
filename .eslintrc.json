@@ -7,7 +7,8 @@
     "eslint:recommended",
     "airbnb",
     "prettier",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -44,7 +45,6 @@
       {
         "devDependencies": true
       }
-    ],
-    "prettier/prettier": "error"
+    ]
   }
 }
