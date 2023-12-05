@@ -1,50 +1,32 @@
 {
   "env": {
+    "es6": true,
     "browser": true,
-    "es2020": true
+    "node": true
   },
   "extends": [
     "eslint:recommended",
     "airbnb",
-    "prettier",
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": ["prettier"],
   "rules": {
-    "import/prefer-default-export": 0,
-    "import/no-unresolved": 0,
-    "no-param-reassign": 0,
-    "react/jsx-props-no-spreading": 0,
-    "no-bitwise": 0,
-    "no-restricted-syntax": 0,
-    "react/no-array-index-key": 0,
-    "consistent-return": 0,
-    "camelcase": 0,
-    "prefer-promise-reject-errors": 0,
-    "guard-for-in": 0,
-    "no-shadow": 0,
-    "react/destructuring-assignment": 0,
-    "no-undef": 0,
-    "react/jsx-filename-extension": 0,
-    "import/extensions": 0,
-    "no-use-before-define": 0,
-    "no-unused-vars": [
+    "prettier/prettier": [
       "error",
       {
-        "args": "none"
+        "printWidth": 80,
+        "singleQuote": true,
+        "trailingComma": "es5"
       }
     ],
-    "react/react-in-jsx-scope": 0,
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ]
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }]
   }
 }
